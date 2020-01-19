@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'exemplo_widget.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,16 +13,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('My App'),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Olá'), 
-            FlatButton(
-              child: Text(''),
-              onPressed: handleButtonClick,
-            )
-          ],
-        )
+        body: ExemploWidget()
       )
     );
   }
