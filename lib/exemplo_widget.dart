@@ -1,18 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:trintaminutos/exemplo_widget_state.dart';
 
-class ExemploWidget extends StatelessWidget {
-  
+class ExemploWidget extends StatefulWidget {
+
+  ExemploWidget({Key key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context) {
-
-    return Card(
-      child: Column(
-        children: <Widget>[
-          Text('Exemplo 1'),
-          Text('Exemplo 2')
-        ],
-      ),
-    );
-  }
+  ExemploWidgetState createState() => ExemploWidgetState();
 }
