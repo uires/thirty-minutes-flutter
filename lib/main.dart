@@ -13,10 +13,22 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('My App'),
         ),
-        body: Center(
-          child: Text('Olá'),
-        ),
-      ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Olá'), 
+            FlatButton(
+              child: Text(''),
+              onPressed: handleButtonClick,
+            )
+          ],
+        )
+      )
     );
+  }
+
+  handleButtonClick() {
+
+    print("Button pressed");
   }
 }
