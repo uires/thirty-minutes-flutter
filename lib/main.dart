@@ -4,6 +4,14 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   
+  var lista = [
+    'Jonney',
+    'Paulo',
+    'Maria',
+    'Lima',
+    'Fernanda'
+  ];
+
   @override
   Widget build(BuildContext buildContext) {
 
@@ -13,7 +21,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('My App'),
         ),
-        body: ExemploWidget()
+        body: ListView.builder(itemCount: lista.length, itemBuilder: (context, int index) {
+          return Text(lista[index]);
+        },)
       )
     );
   }
