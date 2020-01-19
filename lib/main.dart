@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'exemplo_widget.dart';
+// import 'exemplo_widget.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
           title: Text('My App'),
         ),
         body: ListView.builder(itemCount: lista.length, itemBuilder: (context, int index) {
-          return Text(lista[index]);
+
+          var textStyle = TextStyle(fontSize: 20, color: Colors.black);
+          return Text(lista[index], style: textStyle);
         },)
       )
     );
